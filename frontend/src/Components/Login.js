@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import gym from '../gym.jpg';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -6,12 +8,12 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log(`Username: ${username}`);
-    console.log(`Password: ${password}`);
+    console.log('Username: ${username}');
+    console.log('Password: ${password}');
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundImage: {gym}}}>
       <div style={{ border: '1px solid #ccc', padding: '20px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
         <h2>Login</h2>
         <form onSubmit={handleLogin}>
@@ -36,6 +38,7 @@ const Login = () => {
           <button type="submit" style={{ padding: '10px 20px', border: 'none', backgroundColor: '#007BFF', color: '#fff', borderRadius: '5px', cursor: 'pointer' }}>
             Login
           </button>
+          <Link to='/Register'><p>Create an account</p></Link>
         </form>
       </div>
     </div>

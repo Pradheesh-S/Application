@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   const [username, setUsername] = useState('');
@@ -8,10 +9,10 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    console.log(`Username: ${username}`);
-    console.log(`Email: ${email}`);
-    console.log(`Password: ${password}`);
-    console.log(`Confirm Password: ${confirmPassword}`);
+    console.log('Username: ${username}');
+    console.log('Email: ${email}');
+    console.log('Password: ${password}');
+    console.log('Confirm Password: ${confirmPassword}');
   };
 
   return (
@@ -58,6 +59,7 @@ const Register = () => {
           <button type="submit" style={{ padding: '10px 20px', border: 'none', backgroundColor: '#007BFF', color: '#fff', borderRadius: '5px', cursor: 'pointer' }}>
             Register
           </button>
+          <Link to='/Login'><p>already have an account</p></Link>
         </form>
       </div>
     </div>
