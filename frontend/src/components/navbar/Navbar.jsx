@@ -46,9 +46,9 @@ const Navbar = ({ toggle }) => {
       <Link to="/log">
         <a href="/" className="menu-items">Login</a>
       </Link>
-      <div className="profile">
+      {/* <div className="profile">
       <CgProfile className="pf" onClick={handleAdmin}/>
-      </div>
+      </div> */}
     </nav>
   );
 };

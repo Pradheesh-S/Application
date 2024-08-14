@@ -1,4 +1,4 @@
-.admin-dashboard {
+/* .admin-dashboard {
     display: flex;
     height: 100vh;
     background-color: #000;
@@ -47,4 +47,194 @@
     padding: 20px;
     background-color: #333;
   }
-  
+   */
+
+   .admin-dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #222;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: #333;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #222;
+    padding: 20px;
+}
+
+.header {
+    padding: 20px;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.content {
+    flex: 1;
+    background-color: #333;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #fff;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #444;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #555;
+}
+
+table thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #555;
+    transition: background-color 0.3s;
+}
+
+table tbody tr:hover {
+    background-color: #555;
+}
+
+table tbody td {
+    padding: 10px;
+}
+
+.edit-button, .submit {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.edit-button {
+    background-color: #28a745; /* Green color */
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
+
+.submit {
+    background-color: #dc3545; /* Red color */
+}
+
+.submit:hover {
+    background-color: #c82333;
+}
+
+.edit-form {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.edit-form h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+.edit-form label {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="email"],
+.edit-form input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.edit-form .edit-button {
+    width: 100%;
+    background-color: #28a745;
+}
+
+.edit-form .cancel-button {
+    width: 100%;
+    background-color: #6c757d;
+    margin-top: 10px;
+}
+
+.edit-form .cancel-button:hover {
+    background-color: #5a6268;
+}

@@ -10,6 +10,7 @@ import ScrollToTop from "./components/scrollToTop";
 import Log from "./components/Login/Log";
 import Sign from "./components/Signup/Sign";
 import Admin from "./components/admin/Admin";
+import User from "./components/user/User"
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/admin" element={<Admin />} />
+        <Route exact path="/user" element={<User />} />
         <Route exact path="/Home" element={<Home />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/log" element={<Log />} />
