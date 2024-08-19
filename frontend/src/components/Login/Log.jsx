@@ -75,10 +75,10 @@ const Log = () => {
       const response = await axios.post('http://127.0.0.1:8080/api/users/login', loginData);
       console.log(response.data);
       alert('Login successful');
-      // if(roles == 'Admin')
+      // if(loginData.roles == 'Admin')
         navigate('/admin');  // Redirect to the Home page after successful login
-      // else(roles == 'User')
-      //   navigate('/user'); 
+      // else(loginData.roles == 'User')
+        // navigate('/user'); 
     } catch (error) {
       console.error(error);
       alert('Invalid credentials');
